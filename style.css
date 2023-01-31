@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
 } 
 
 header{
     width: 100%;
-    height: 7rem;
+    height: 6rem;
     background-color: #450055;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0.6rem 0px 0px 0px;
-    box-shadow: 1px 1px 5px #8a8d89;
+    position: sticky;
+    top: 0;
 }
 
 .top-head{
@@ -32,6 +33,7 @@ header{
     align-items: center;
     color: white;
     justify-content: space-around;
+    cursor: pointer;
 }
 .cancel{
     padding-right: 1rem;
@@ -70,5 +72,56 @@ ul li a{
 }
 .active{
     border-bottom: 2px solid white;
-    border-radius: 2px;
 }
+
+main{
+    width: 100%;
+    padding: 0.8rem 0rem;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 45rem;
+    background-color: #202124;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-head{
+    width: 100%;
+    padding: 1rem;
+    background-color: #303134;
+}
+.table-head h6{
+    font-weight: 400;
+    color: #858A90;
+}
+.selectDiv{
+    display: flex;
+    justify-content: flex-start;
+    color: #4487F6;
+    align-items: flex-start;
+}
+
+.selectDiv i{
+    margin-top: -0.1rem;
+}
+
+select{
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    color: #4487F6;
+    background-color: #303134;
+    appearance: none;
+    padding-right: 0.5rem;
+}
+
+option{
+    background-color: #303134;
+    border: none;
+}
+
