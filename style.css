@@ -7,15 +7,268 @@
 
 header{
     width: 100%;
-    height: 6rem;
-    background-color: #450055;
+    height: 11rem;
+    background-color: #ffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.6rem 0px 0px 0px;
-    position: sticky;
-    top: 0;
+    justify-content: space-between;
+    position: relative;
 }
+
+header section{
+    display: flex;
+    width: 100%;
+    /* height: 30%; */
+}
+.header-top{
+    height: 33%;
+    padding-top: 0.4rem;
+}
+.teams-logo{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2rem;
+}
+.header-middle{
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #37003C;
+}
+menu{
+    width: 88%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom{
+    height: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.links{
+    width: 89%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+nav{
+    width: 90%;
+    height: 100%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul li{
+    font-size: 12px;
+    height: 95%;
+    font-weight: 500;
+}
+
+
+
+nav ul li:hover{
+    border-bottom: 4px solid #9C42E1;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 0px 0.8rem;
+    color: #B0B0AC;
+}
+
+aside{
+    width: 6%;
+    height: 100%;
+    display: flex;
+    padding: 0px 0.2rem;
+    justify-content: space-around;
+    align-items: center;
+    color: #B0B0AC;
+    font-size: 12px;
+    height: 95%;
+    font-weight: 500;
+}
+
+aside i{
+    color: black;
+}
+
+.menu-left{
+    width: 59%;
+    height: 100%;
+    display: flex;
+}
+
+.menu-left ul{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-left ul li{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu-left ul li:hover .dropdown-menu{
+    display: block;
+}
+
+.menu-left ul li:hover .dropdown-icon{
+    color: #FF2882;
+}
+
+.menu-left ul li:hover .dropdown-icon i{
+    display: block;
+}
+
+.dropdown-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.dropdown-icon i{
+    display: none;
+    margin-bottom: -0.85rem;
+    font-size: 1.5rem;
+}
+
+.dropdown-menu{
+    width: 280px;
+    background-color: #FF2882;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.8rem;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-items{
+    width: 90%;
+    transition: all;
+    background-color: #FF2882;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1rem 1em 1.5rem;
+}
+
+.dropdown-items ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.dropdown-items ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0.4rem 0px;
+    font-size: small;
+    font-weight: 600;
+}
+
+.dropdown-items ul li a:hover{
+    text-decoration: underline;
+}
+
+.menu-left ul li .fa-sort-desc{
+    padding-left: 0.9rem;
+    margin-top: -0.45rem;
+}
+
+.menu-right{
+    width: 27%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.menu-right ul{
+    width: 85%;
+    height: 70%;
+    border-left: 1px solid #5F3363;
+    border-right: 1px solid #5F3363;
+}
+
+.menu-right ul a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.menu-right .search-icon{
+    height: 90%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 22px;
+}
+
+.teams-logo span{
+    width: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #76766F;
+    font-size: 15px;
+}
+
+.teams-logo span h6{
+    font-weight: 500;
+}
+
+
+.teams-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+.teams-logo img:hover{
+    width: 40px;
+    height: 40px;
+}
+
 
 .top-head{
     width: 99%;
@@ -43,16 +296,8 @@ header{
     font-weight: 500;
 }
 
-nav{
-    width: 99%;
-    padding: 0rem 0.2rem;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-ul{
+/* ul{
     width: 50%;
     height: 100%;
     display: flex;
@@ -69,9 +314,9 @@ ul li a{
     text-transform: uppercase;
     font-size: 0.8rem;
     color: white;
-}
-.active{
-    border-bottom: 2px solid white;
+} */
+#active{
+    display: block;
 }
 
 main{
@@ -84,10 +329,9 @@ main{
 }
 
 section{
-    width: 45rem;
-    background-color: #202124;
-    display: flex;
-    flex-direction: column;
+    /* width: 45rem; */
+    /* background-color: #202124; */
+    /* display: flex; */
 }
 
 .table-head{
@@ -170,7 +414,21 @@ li{
     justify-content: space-evenly;
 }
 
-img{
-    width: 22px;
-    height: 22px;
+.premie-league-logo{
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    padding-bottom: 0.4rem;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+}
+
+.premie-league-logo img {
+    border-radius: 50%;
+    width: 80%;
+    margin: auto;
+    height: 70%;
 }
