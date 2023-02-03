@@ -12,7 +12,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
     position: relative;
 }
 
@@ -171,7 +170,7 @@ aside i{
 
 .dropdown-icon i{
     display: none;
-    margin-bottom: -0.55rem;
+    margin-bottom: -0.57rem;
     font-size: 1rem;
 }
 
@@ -450,18 +449,15 @@ li{
     background-repeat: no-repeat;
     background-size: auto 100%;
     margin-top: -0.05rem;
-    /* margin-bottom: 2rem; */
     padding: 4rem 2rem 4rem 1rem;
     position: relative;
     background-image: url('https://www.premierleague.com/resources/prod/v6.111.2-4807/i/bg-elements/heading-bg-desktop.svg');
-
 }
 
 .filter{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #37003c; */
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -471,23 +467,75 @@ li{
 
 .filter-div{
     width: 100%;
-    height: 50px;
-    padding: 1rem;
-    /* background-color: green; */
+    padding: 1rem 0;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
     display: grid;
-    grid-template-columns: 20% 20% 20% 39%;
+    grid-template-columns: 190px 150px 190px 210px auto;
     grid-template-rows: 1fr;
     column-gap: 5px;
 }
 
-.filter-div div:nth-child(1),
-.filter-div div:nth-child(2),
-.filter-div div:nth-child(3)
-{
+.filter-items{
     border-right: 1px solid #e8e8e8;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
 }
+
+.filter-icon{
+    display: flex;
+    flex-direction: column;
+}
+.compete-season:hover .filter-icon span{
+    color: #FF2882;
+}
+
+.matches:hover .filter-icon span,
+.matches:hover h4 
+{
+    color: #FF2882;
+}
+
+.reset-filter{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.5rem;
+    color: #585656;
+}
+
+.reset-filter i{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.reset-filter span{
+    font-size: small;
+    font-weight: 600;
+    margin: 0px 0.4rem;
+    cursor: pointer;
+}
+    
+.filter-icon span{
+    font-size: xx-small;
+    color: #585656;
+    margin: -0.11rem 0;
+}
+
+.filter-items h4{
+    font-weight: 600;
+    color: #2f2f2f;
+}
+
+.filter-items i{
+    font-size: 12px;
+    font-weight: 500;
+    color: #A456FF;
+}
+
 
 .section-title h1{
     font-size: 75px;
