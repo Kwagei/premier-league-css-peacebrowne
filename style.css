@@ -1,0 +1,819 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+} 
+
+header{
+    width: 100%;
+    height: 11rem;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+header section{
+    display: flex;
+    width: 100%;
+}
+.header-top{
+    height: 29%;
+    padding: 0.4rem 0px;
+}
+.teams-logo{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2rem;
+}
+.header-middle{
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #37003c;
+}
+menu{
+    width: 88%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom{
+    height: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.links{
+    width: 89%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+}
+.stick{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 1px 0px 0px rgba(9,30,66,.25) ;
+}
+
+
+header nav{
+    width: 90%;
+    height: 100%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul li{
+    font-size: 12px;
+    height: 95%;
+    font-weight: 300;
+}
+
+
+header nav ul li:hover,#nav-active{
+    border-bottom: 4px solid #9C42E1;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    padding: 0px 0.8rem;
+    color: #7B7B75;
+}
+
+aside{
+    width: 6%;
+    height: 100%;
+    display: flex;
+    padding: 0px 0.2rem;
+    justify-content: space-around;
+    align-items: center;
+    color: #7B7B75;
+    font-size: 12px;
+    height: 95%;
+    font-weight: 300;
+}
+
+aside i{
+    color: black;
+}
+
+.menu-left span{
+    font-size: small;
+}
+.menu-left{
+    width: 59%;
+    height: 100%;
+    display: flex;
+}
+
+.menu-left ul{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-left ul li{
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu-left ul li:hover .dropdown-menu{
+    display: block;
+}
+
+.menu-left ul li:hover .dropdown-icon{
+    color: #FF2882;
+}
+
+.menu-left ul li:hover .dropdown-icon i{
+    display: block;
+}
+
+.dropdown-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.dropdown-icon i{
+    display: none;
+    margin-bottom: -0.57rem;
+    font-size: 1rem;
+}
+
+.dropdown-menu{
+    background-color: #FF2882;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3.8rem;
+    display: none;
+    z-index: 1;
+}
+
+.dropdown-items{
+    background-color: #FF2882;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1em 1rem 1em 1.5rem;
+}
+
+.dropdown-items ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dropdown-items ul li a{
+    line-height: 2;
+    min-width: 7rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: small;
+}
+
+.dropdown-items ul li a:hover{
+    text-decoration: underline;
+}
+
+.menu-left ul li .fa-sort-desc{
+    padding-left: 0.9rem;
+    margin-top: -0.45rem;
+}
+
+.menu-right{
+    width: 27%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-right ul{
+    width: 85%;
+    height: 60%;
+    border-left: 1px solid #5F3363;
+    border-right: 1px solid #5F3363;
+}
+
+.menu-right ul li {
+    font-size: small;
+}
+
+.menu-right ul a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.menu-right .search-icon{
+    height: 90%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: small;
+}
+
+.teams-logo span{
+    width: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #76766F;
+    font-size: 15px;
+}
+
+.teams-logo span h6{
+    font-weight: 500;
+}
+
+
+.teams-logo img{
+    width: 30px;
+    height: 30px;
+}
+
+.teams-logo img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+
+.top-head{
+    width: 99%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.title{
+    width: 10rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.cancel{
+    padding-right: 1rem;
+}
+
+.title h4{
+    font-weight: 500;
+}
+
+#active{
+    display: block;
+}
+
+main{
+    width: 100%;
+    padding: 0.8rem 0 1.8rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-title{
+    padding-left: 1rem;
+    font-size: 20.8px;
+    display: flex;
+    align-items: center;
+    color: #300034;
+    padding-bottom: 0.8rem;
+}
+
+.table-title h4{
+    font-weight: 600;
+}
+
+.table-title svg{
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-bottom: -0.5rem;
+    fill: #300034;
+}
+
+.table-head{
+    padding: 1rem 1.3rem;
+    background-color: #303134;
+}
+.table-head h6{
+    font-weight: 400;
+    color: #858A90;
+}
+.selectDiv{
+    display: flex;
+    justify-content: flex-start;
+    color: #4487F6;
+    align-items: flex-start;
+}
+
+.selectDiv i{
+    margin-top: -0.1rem;
+}
+
+select{
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    color: #4487F6;
+    background-color: #303134;
+    appearance: none;
+    padding-right: 0.5rem;
+}
+
+option{
+    background-color: #303134;
+    border: none;
+}
+
+li span{
+    margin: 0px 0.3rem;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.premie-league-logo{
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    padding-bottom: 0.4rem;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+}
+
+.premie-league-logo svg {
+    border-radius: 50%;
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    fill: #37003c;
+}
+
+.section-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #37003c;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-top: -0.05rem;
+    padding: 4rem 2rem 4rem 1rem;
+    position: relative;
+    background-image: url('https://www.premierleague.com/resources/prod/v6.111.2-4807/i/bg-elements/heading-bg-desktop.svg');
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 1.6rem 1rem;
+    position: relative;
+}
+
+.filter-div{
+    width: 100%;
+    padding: 1rem 0;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 190px 150px 190px 210px auto;
+    grid-template-rows: 1fr;
+    column-gap: 5px;
+}
+
+.filter-items{
+    border-right: 1px solid #e8e8e8;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.filter-icon{
+    display: flex;
+    flex-direction: column;
+}
+.compete-season:hover .filter-icon span{
+    color: #FF2882;
+}
+
+.matches:hover .filter-icon span,
+.matches:hover h4 
+{
+    color: #FF2882;
+}
+
+.reset-filter{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.5rem;
+    color: #585656;
+}
+
+.reset-filter i{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.reset-filter span{
+    font-size: small;
+    font-weight: 600;
+    margin: 0px 0.4rem;
+    cursor: pointer;
+}
+    
+.filter-icon span{
+    font-size: xx-small;
+    color: #585656;
+    margin: -0.11rem 0;
+}
+
+.filter-items h4{
+    font-weight: 600;
+    color: #2f2f2f;
+}
+
+.filter-items i{
+    font-size: 12px;
+    font-weight: 500;
+    color: #A456FF;
+}
+
+
+.section-title h1{
+    font-size: 75px;
+    font-weight: 600;
+    color: white;
+}
+
+.section-title span{
+    padding: 0.5rem 0.8rem;
+    border-radius: 3px;
+    background-color: white;
+    font-size: small;
+}
+.section-title span:hover{
+    background-color: #FF2882;
+    cursor: pointer;
+    color: white;
+}
+
+.next-section-btn{
+    width: 19rem;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.next-section-btn button{
+    height: 42px;
+    padding: .375rem 1.86rem;
+    background-color: #EBEBE6;
+    line-height: 1.5;
+    border-top-left-radius: .275rem;
+    border-top-right-radius: .275rem;
+    border: none;
+    font-size: small;
+    font-weight: 400;
+}
+.extra-btn:hover{
+    background-color: #FF2882;
+    color: white;
+
+}
+
+#active-btn{
+    background-color: white;
+    font-weight: 600;
+}
+
+table {
+    width: 99%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border: 4px solid white;
+}
+
+table thead tr {
+    background-color: #FBFBFB;
+    color: #8A8A8A;
+    text-align: left;
+    border-bottom: 3px solid white;
+}
+tr{
+    border-bottom: 1px solid #e8e8e8;
+}
+table tbody tr{
+    padding: 0 1rem;
+}
+ th {
+    font-weight: 400;
+    padding: 10px 0.8rem;
+    text-align: center;
+    font-size: small;
+}
+
+td {
+    font-weight: 400;
+    text-align: center;
+}
+
+.goals{
+    padding: 0.3rem;
+}
+.more{
+    width: 20px;
+    padding: 0.5rem 0;
+    background-color: #fbfbfb;
+    color: #8A8A8A;
+}
+.more:hover{
+    background-color: #ff2882;
+    color: white;
+}
+.form{
+    padding: 0 0.7rem;
+    width: 150px;
+}
+.form span{
+    margin: 0 0.1rem;
+    border-radius: 50px;
+}
+ 
+.win{
+    background-color: #13CF00;
+    padding: 6px 8px;
+    color: white;
+}
+.draw{
+    background-color: #76766F;
+    padding: 6px 10px;
+    color: white;
+}
+.loose{
+    background-color: #D81920;
+    color: white;
+    padding: 6px 12.5px;
+    font-weight: 600;
+}
+/* .position {
+    display: ;
+    align-items: center;
+    background-color: orange;
+} */
+
+.position span{
+   font-size: 17px;
+    color: #ADADAD;
+}
+
+#caret-up{
+    font-size: 9px;
+    color: #13CF00;
+}
+
+#caret-down{
+    font-size: 9px;
+    color: #D81920;
+}
+
+.club img{
+    width: 30px;
+    height: 30px;
+}
+
+.club{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.club:hover span{
+    text-decoration: underline;
+}
+
+.club span{
+    padding-left: 1rem;
+}
+
+.next-team span{
+    border: 1px solid #e8e8e8;
+    border-radius: 50px;
+    margin: 0 auto -0.3rem auto;
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.next-team span img{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.sponsor{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.sponsor-div div{
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#top-sponsor-div{
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 0.4rem;
+}
+
+.sponsor-div{
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sponsor-div h4{
+    font-weight: 600;
+    color: #B3B4B3;
+    font-size: small;
+}
+
+footer{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.3rem;
+    background-color: #37003c;
+    background-position: bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url('https://www.premierleague.com/resources/prod/v6.111.2-4807/i/bg-elements/pl-footer.svg');
+}
+
+footer nav{
+    width: 95%;
+    height: 70%;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav h2{
+    /* background-color: brown; */
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+footer nav span{
+    /* background-color: #4487F6; */
+    display: flex;
+    flex-direction: column;
+}
+footer nav span a{
+    width: 100%;
+    /* background-color: crimson; */
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menu{
+    min-width: 100px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 0;
+}
+
+.footer-links{
+    width: 100%;
+    height: 90%;
+    margin-top: 1rem;
+    /* background-color: peru; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#valuable{
+    margin-right: 2rem;
+}
+
+.footer-links .ul span{
+    padding: 0.4em 0;
+    /* background-color: red; */
+}
+
+.footer-links .ul span a{
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 11.5px;
+    font-weight: 500;
+}
+
+.footer-links .ul span a i{
+    font-size: 10px;
+    color: #f80f70;
+    margin-left: 0.1rem;
+}
+
+.footer-links .ul span a:hover{
+    color: #f80f70;
+}
+
+::selection {
+    background: #f80f70;
+}
+
+.terms{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: white ;
+}
+.terms ul{
+    display: flex;
+
+}
+
+.terms li {
+    font-size: x-small;
+    margin-left: 1rem;
+    list-style-type:decimal;
+}
