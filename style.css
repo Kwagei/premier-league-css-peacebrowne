@@ -19,7 +19,6 @@ header{
 header section{
     display: flex;
     width: 100%;
-    /* height: 30%; */
 }
 .header-top{
     height: 29%;
@@ -308,36 +307,35 @@ aside i{
     font-weight: 500;
 }
 
-
-/* ul{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-ul li{
-    list-style-type: none;
-    height: 80%;
-    padding: 0px 2rem;
-}
-ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    color: white;
-} */
 #active{
     display: block;
 }
 
 main{
     width: 100%;
-    padding: 0.4rem 0rem;
-    background-color: #171717;
+    padding: 0.8rem 0 1.8rem 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.table-title{
+    padding-left: 1rem;
+    font-size: 20.8px;
+    display: flex;
     align-items: center;
+    color: #300034;
+    padding-bottom: 0.8rem;
+}
+
+.table-title h4{
+    font-weight: 600;
+}
+
+.table-title svg{
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-bottom: -0.5rem;
+    fill: #300034;
 }
 
 .table-head{
@@ -374,45 +372,10 @@ option{
     border: none;
 }
 
-.table{
-    width: 100%;
-}
-table{
-    width: 100%;
-    padding: 1em;
-    border-collapse: collapse;
-}
-th, td{
-    text-align: left;
-    padding: 0.7rem 0.5rem;
-    font-size: 12px;
-    color: #9aa0a6;
-    font-weight: 400;
-}
-tr{
-    border-top: 1px solid #9aa0a6;
-}
-
-tr:hover{
-    background-color: #050505;
-}
-td .fa-minus{
-    padding: 0.15rem 0.2rem;
-    background-color: #9AA0A6;
-}
-td .fa-times{
-    padding: 0.15rem 0.3rem;
-    background-color: #EA4335;
-}
-td i {
-    background-color: #3AA757;
-    padding: 0.15rem ;
-    border-radius: 50%;
-    color: white;
-}
 li span{
     margin: 0px 0.3rem;
 }
+
 li{
     list-style-type: none;
     display: flex;
@@ -461,7 +424,7 @@ li{
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    padding: 2rem 1rem;
+    padding: 1.6rem 1rem;
     position: relative;
 }
 
@@ -585,4 +548,128 @@ li{
 #active-btn{
     background-color: white;
     font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    border: 4px solid white;
+}
+
+table thead tr {
+    background-color: #FBFBFB;
+    color: #8A8A8A;
+    text-align: left;
+    border-bottom: 4px solid white;
+}
+tr{
+    border-bottom: 1px solid #e8e8e8;
+}
+table tbody tr{
+    padding: 0 1rem;
+}
+ th {
+    font-weight: 400;
+    padding: 14px 0;
+    text-align: center;
+    border: 2px solid white;
+}
+
+ td {
+    font-weight: 400;
+    text-align: center;
+}
+.more{
+    width: 60px;
+    background-color: #fbfbfb;
+    border: 1px solid #e8e8e8;
+    color: #8A8A8A;
+}
+.more:hover{
+    background-color: #ff2882;
+    color: white;
+}
+.form{
+    padding: 0 0;
+    width: 120px;
+}
+.form span{
+    margin: 0 0.1rem;
+    border-radius: 50px;
+}
+ 
+.win{
+    background-color: #13CF00;
+    padding: 6px 8px;
+    color: white;
+}
+.draw{
+    background-color: #76766F;
+    padding: 6px 10px;
+    color: white;
+}
+.loose{
+    background-color: #D81920;
+    color: white;
+    padding: 6px 12.5px;
+    font-weight: 600;
+}
+.position span{
+   font-size: 2rem;
+    color: #ADADAD;
+}
+
+.club img{
+    width: 30px;
+    height: 30px;
+}
+
+.club{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.club span{
+    padding-left: 1rem;
+}
+
+.next-team span{
+    border: 1px solid #e8e8e8;
+    border-radius: 50px;
+    margin: 0 auto -0.3rem auto;
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.next-team span img{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.sponsor{
+    width: 100%;
+    height: auto;
+    border-top: 5px solid #37003c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.sponsor div{
+    width: 250px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sponsor div h4{
+    font-weight: 400;
+    color: #B3B4B3;
 }
