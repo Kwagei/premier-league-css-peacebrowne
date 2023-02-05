@@ -71,12 +71,12 @@ menu{
 }
 
 
-nav{
+header nav{
     width: 90%;
     height: 100%;
 }
 
-nav ul{
+header nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,18 +84,18 @@ nav ul{
     height: 100%;
 }
 
-nav ul li{
+header nav ul li{
     font-size: 12px;
     height: 95%;
     font-weight: 300;
 }
 
 
-nav ul li:hover,#nav-active{
+header nav ul li:hover,#nav-active{
     border-bottom: 4px solid #9C42E1;
 }
 
-nav ul li a{
+header nav ul li a{
     text-decoration: none;
     padding: 0px 0.8rem;
     color: #7B7B75;
@@ -551,6 +551,8 @@ li{
 }
 
 table {
+    width: 99%;
+    margin: 0 auto;
     border-collapse: collapse;
     font-size: 0.9em;
     border: 4px solid white;
@@ -560,7 +562,7 @@ table thead tr {
     background-color: #FBFBFB;
     color: #8A8A8A;
     text-align: left;
-    border-bottom: 4px solid white;
+    border-bottom: 3px solid white;
 }
 tr{
     border-bottom: 1px solid #e8e8e8;
@@ -570,19 +572,23 @@ table tbody tr{
 }
  th {
     font-weight: 400;
-    padding: 14px 0;
+    padding: 10px 0.8rem;
     text-align: center;
-    border: 2px solid white;
+    font-size: small;
 }
 
- td {
+td {
     font-weight: 400;
     text-align: center;
 }
+
+.goals{
+    padding: 0.3rem;
+}
 .more{
-    width: 60px;
+    width: 20px;
+    padding: 0.5rem 0;
     background-color: #fbfbfb;
-    border: 1px solid #e8e8e8;
     color: #8A8A8A;
 }
 .more:hover{
@@ -590,8 +596,8 @@ table tbody tr{
     color: white;
 }
 .form{
-    padding: 0 0;
-    width: 120px;
+    padding: 0 0.7rem;
+    width: 150px;
 }
 .form span{
     margin: 0 0.1rem;
@@ -614,9 +620,25 @@ table tbody tr{
     padding: 6px 12.5px;
     font-weight: 600;
 }
+/* .position {
+    display: ;
+    align-items: center;
+    background-color: orange;
+} */
+
 .position span{
-   font-size: 2rem;
+   font-size: 17px;
     color: #ADADAD;
+}
+
+#caret-up{
+    font-size: 9px;
+    color: #13CF00;
+}
+
+#caret-down{
+    font-size: 9px;
+    color: #D81920;
 }
 
 .club img{
@@ -628,6 +650,10 @@ table tbody tr{
     height: 50px;
     display: flex;
     align-items: center;
+}
+
+.club:hover span{
+    text-decoration: underline;
 }
 
 .club span{
@@ -668,16 +694,15 @@ table tbody tr{
     align-items: center;
 }
 
-.sponsor-div{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+#top-sponsor-div{
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 0.4rem;
 }
 
-hr{
-    width: 90%;
-    height: 20px;
-    background-color: orange;
+.sponsor-div{
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .sponsor-div h4{
@@ -688,8 +713,11 @@ hr{
 
 footer{
     width: 100%;
-    height: 700px;
-    padding-top: 0.6rem;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.3rem;
     background-color: #37003c;
     background-position: bottom;
     background-size: 100% auto;
@@ -697,3 +725,95 @@ footer{
     background-image: url('https://www.premierleague.com/resources/prod/v6.111.2-4807/i/bg-elements/pl-footer.svg');
 }
 
+footer nav{
+    width: 95%;
+    height: 70%;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav h2{
+    /* background-color: brown; */
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+footer nav span{
+    /* background-color: #4487F6; */
+    display: flex;
+    flex-direction: column;
+}
+footer nav span a{
+    width: 100%;
+    /* background-color: crimson; */
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menu{
+    min-width: 100px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 0;
+}
+
+.footer-links{
+    width: 100%;
+    height: 90%;
+    margin-top: 1rem;
+    /* background-color: peru; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#valuable{
+    margin-right: 2rem;
+}
+
+.footer-links .ul span{
+    padding: 0.4em 0;
+    /* background-color: red; */
+}
+
+.footer-links .ul span a{
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 11.5px;
+    font-weight: 500;
+}
+
+.footer-links .ul span a i{
+    font-size: 10px;
+    color: #f80f70;
+    margin-left: 0.1rem;
+}
+
+.footer-links .ul span a:hover{
+    color: #f80f70;
+}
+
+::selection {
+    background: #f80f70;
+}
+
+.terms{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: white ;
+}
+.terms ul{
+    display: flex;
+
+}
+
+.terms li {
+    font-size: x-small;
+    margin-left: 1rem;
+    list-style-type:decimal;
+}
